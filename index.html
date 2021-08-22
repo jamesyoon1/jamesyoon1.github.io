@@ -1,131 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JamesYoon Dev</title>
-        <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JamesYoon Dev</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
-        +Pro:300,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+        +Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/style.css"> 
-        <script defer src="js/all.js"></script> <!--load all styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/all.js"></script>
+    <!--load all styles -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>James Yoon</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Web Developer</p>
+      <img
+        src="img/jamesyoonprofile.jpg"
+        alt="James Yoon profile"
+        class="intro__img"
+      />
+    </section>
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>James Yoon</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Web Developer</p>
-            <img src="img/jamesyoonprofile.jpg" alt="James Yoon profile" class="intro__img">
-        </section>
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">Skills</h2>
+      <div class="services">
+        <!-- service -->
+        <div class="service">
+          <h3>Web App</h3>
+          <ul style="list-style-type: none">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+          </ul>
+        </div>
 
+        <!-- service -->
+        <div class="service">
+          <h3>Web App</h3>
+          <p>HTML, CSS, Javascript, React</p>
+        </div>
+      </div>
+      <!-- / services -->
 
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">Skills</h2>
-            <div class="services">
+      <a href="#work" class="btn">My Projects</a>
+    </section>
 
-                <!-- service -->
-                <div class="service">
-                    <h3>Web App</h3>
-                    <ul style="list-style-type:none;">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>React</li>
-                    </ul>
-                </div>
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Developer based out of Washington DC
+      </p>
 
-                <!-- service -->
-                <div class="service">
-                    <h3>Web App</h3>
-                    <p>HTML, CSS, Javascript, React
-                    </p>
-                </div>
+      <div class="about-me__body">
+        <p>Placeholder</p>
+        <p>Placeholder</p>
+      </div>
 
-            </div>
-            <!-- / services -->
+      <img src="img/jamesyoonprofile.jpg" alt="profile" class="about-me__img" />
+    </section>
 
-            <a href="#work" class="btn">My Projects</a>
-        </section>
+    <!-- My Work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Projects</h2>
+      <p class="section__subtitle section__subtitle--work">Personal projects</p>
 
-        <!-- About Me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">About Me</h2>
-            <p class="section__subtitle section__subtitle--about">Developer based out of Washington DC</p>
+      <div class="portfolio">
+        <!-- Portfolio item 01-->
+        <a
+          href="https://jamesyoon1.github.io/weatherapp-js/"
+          class="portfolio__item"
+        >
+          <img
+            src="img/weatherapp.jpeg"
+            alt="weatherapp"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Portfolio item 02-->
+        <a
+          href="https://jamesyoon1.github.io/counter-app/"
+          class="portfolio__item"
+        >
+          <img
+            src="img/counterapp.jpeg"
+            alt="counterapp"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Portfolio item 03-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="img/comingsoon.jpg"
+            alt="third project"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+    </section>
 
-            <div class="about-me__body">
-                <p>Placeholder</p>
-                <p>Placeholder</p>
-            </div>
-
-            <img src="img/jamesyoonprofile.jpg" alt="profile" class="about-me__img">
-        </section>
-
-        <!-- My Work-->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Projects</h2>
-            <p class="section__subtitle section__subtitle--work">Personal projects</p>
-
-            <div class="portfolio">
-
-                <!-- Portfolio item 01-->
-                <a href="https://jamesyoon1.github.io/weatherapp-js/" class="portfolio__item">
-                    <img src="img/weatherapp.jpeg" alt="weatherapp" class="portfolio__img">
-                </a>
-                <!-- Portfolio item 02-->
-                <a href="#" class="portfolio__item">
-                    <img src="img/comingsoon.jpg" alt="second project" class="portfolio__img">
-                </a>
-                <!-- Portfolio item 03-->
-                <a href="#" class="portfolio__item">
-                    <img src="img/comingsoon.jpg" alt="third project" class="portfolio__img">
-                </a>
-                
-                
-
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="file/RESUME_JamesYoon.pdf" class="footer__link">My Resume</a>
-            <br>
-            <a href="mailto:james.s.yoon1@gmail.com" class="footer__link">james.s.yoon1@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link"
-                    href="https://twitter.com/james_yoon1"><i class="fab fa-twitter"></i></a></li>
-                <li class="social-list__item"><a class="social-list__link"
-                    href="https://github.com/jamesyoon1"><i class="fab fa-github"></i></a></li>
-                <li class="social-list__item"><a class="social-list__link"
-                    href="https://www.linkedin.com/in/james-yoon-dev/"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-        </footer>
-        <script src="js/index.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="file/RESUME_JamesYoon.pdf" class="footer__link">My Resume</a>
+      <br />
+      <a href="mailto:james.s.yoon1@gmail.com" class="footer__link"
+        >james.s.yoon1@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/james_yoon1"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/jamesyoon1"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/james-yoon-dev/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
